@@ -1,0 +1,179 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $purple;
+    box-shadow: 0 5px 5px rgb(81, 80, 80);
+    z-index: 100;
+    &>.container {
+        display: flex;
+        align-items: center;
+    }
+}
+.logo {
+    min-width: fit-content;
+    margin-right: 20px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: $purple;
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+    span {
+        text-transform: uppercase;
+        background: linear-gradient(-45deg, $green, $yellow, $green, $yellow, $green);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-4em) skewX(-45deg);
+        width: 30%;
+        height: 100%;
+        background-color: rgba(#fff, .2);
+    }
+    &:hover::after {
+        animation: glare 1.5s;
+    }
+    @include mobile {
+        padding: 5px 10px;
+    }
+}
+.menu {
+    margin-left: auto;
+    margin-right: 60px;
+    position: relative;
+    @include tablet {
+        margin-right: 40px;
+    }
+    @include mobile {
+        margin-right: 20px;
+    }
+    &__burger {
+        display: none;
+        position: relative;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        @include tablet {
+            display: block;
+        }
+        span,
+        &::before,
+        &::after {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        &::before {
+            content: '';
+            top: 50%;
+        }
+        &::after {
+            content: '';
+            top: calc(100% - 3px);
+        }
+        @include mobileXS {
+            width: 30px;
+            height: 25px;
+        }
+    }
+    .menu__list {
+        display: flex;
+        gap: 40px;
+        @include tablet {
+            display: none;
+        }
+    }
+    .menu__list.visible {
+        display: none;
+        @include tablet {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 2px solid $purple;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+    .menu__item {
+        color: #fff;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 3px dashed #fff;
+            transition: .3s all;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+        @include tablet {
+            color: #000;
+            &::after {
+                display: none;
+            }
+            a {
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+    }
+}
+.user-sign-in {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: $purple;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fff;
+    white-space: nowrap;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(#fff, 0.6));
+        transform: translateX(-4em) skewX(-45deg);
+    }
+    &:hover::after {
+        animation: glare 2s;
+    }
+    @include mobile {
+        padding: 5px 10px;
+    }
+}
+
+@keyframes glare {
+    0% {
+        transform: translateX(-4em) skewX(-45deg);
+    }
+    100% {
+        transform: translateX(15em) skewX(-45deg);
+    }
+}
