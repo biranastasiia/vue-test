@@ -1,0 +1,54 @@
+.advantages {
+    padding-top: 100px;
+    @include tablet {
+        padding-top: 80px;
+    }
+}
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+        flex-wrap: wrap;
+        gap: 40px 0;
+    }
+}
+.advantage {
+    flex-basis: 25%;
+    text-align: center;
+    padding: 20px;
+    &:not(:last-child) {
+        border-right: 1px solid #000;
+        @include mobile {
+            border-right: unset;
+        }
+    }
+    @include mobile {
+        flex-basis: 50%;
+        &:nth-child(2n + 1) {
+            border-right: 1px solid #000;
+            @include mobileXXS {
+                border-right: unset;
+            }
+        }
+    }
+    @include mobileXXS {
+        flex-basis: 100%;
+    }
+}
+.advantage__icon {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgba($color: purple, $alpha: .3);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    img {
+        vertical-align: middle;
+    }
+}
+.advantage__title {
+    font-size: 24px;
+}

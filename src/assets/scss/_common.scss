@@ -5,6 +5,7 @@
 }
 body {
     font-size: 20px;
+    line-height: 1.2;
     color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     @include mobile {
@@ -36,5 +37,31 @@ a {
     }
     @include desktop {
         width: 100%;
+    }
+}
+.section__title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    @include tablet {
+        font-size: 38px;
+    }
+    @include mobile {
+        font-size: 28px;
+    }
+}
+.section__subtitle {
+    text-align: center;
+    color: $light-gray;
+    font-size: 28px;
+    margin-bottom: 100px;
+    @include tablet {
+        font-size: 24px;
+        margin-bottom: 80px;
+    }
+    @include mobile {
+        font-size: 18px;
+        margin-bottom: 60px;
     }
 }

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Villa Paradise",
+        "nights": 7,
+        "stars": 5,
+        "isFavorite": false,
+        "date_start": "01.05",
+        "date_end": "08.05",
+        "service": "all inclusive",
+        "price": 200,
+        "photo": "./assets/images/hotels/hotel_1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Blue Star Resort",
+        "nights": 6,
+        "stars": 5,
+        "isFavorite": true,
+        "date_start": "01.05",
+        "date_end": "07.05",
+        "service": "all inclusive",
+        "price": 350,
+        "photo": "./assets/images/hotels/hotel_2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Royal Beach Resert",
+        "nights": 12,
+        "stars": 4,
+        "isFavorite": false,
+        "date_start": "01.05",
+        "date_end": "13.05",
+        "service": "all inclusive",
+        "price": 199,
+        "photo": "./assets/images/hotels/hotel_3.jpg"
+    }
+]

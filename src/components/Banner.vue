@@ -9,14 +9,12 @@
                     <div class="banner__background-box-small"></div>
                     <div class="banner__background-box-small"></div>
                     <div class="banner__background-box-small"></div>
-                    <div class="banner__contacts">
-                        <BannerPopup 
-                            title="Book Now"
-                            imgsrc="./assets/images/icons/call.png"
-                            imgalt="call"
-                            position="top"
-                            :list="phoneList" />
-                    </div>
+                    <BannerPopup 
+                        title="Book Now"
+                        imgsrc="./assets/images/icons/call.png"
+                        imgalt="call"
+                        position="top"
+                        :list="phoneList" />
                 </div>
                 <div class="banner__background-box"></div>
                 <div class="banner__background-box"></div>
