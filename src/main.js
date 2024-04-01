@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import './assets/scss/app.scss'
-document.title = 'GoVacation';
+document.title = 'Levanzo';
 
 Vue.config.productionTip = false
 

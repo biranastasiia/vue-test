@@ -1,5 +1,5 @@
 <template>
-    <section class="products">
+    <section class="products"  id="hotels">
         <div class="container">
             <h2 class="section__title">Top Hotels</h2>
             <div class="section__subtitle">Choose the best of the greatest</div>
@@ -31,7 +31,6 @@
                 const _self = this;
                 axios.get('./mocks/products.json')
                 .then(function (response) {
-                    console.log(response);
                     if(response.status === 200){
                         _self.products_list = response.data;
                     }

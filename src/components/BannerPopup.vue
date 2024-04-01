@@ -1,10 +1,11 @@
 <template>
-    <div class="banner__contacts">
+    <div class="banner__contacts" :class="position">
         <div class="banner__contacts-title" @click="togglePopup()">
+            <span v-if="position==='top'">{{ title }}</span>
             <img :src="imgsrc" :alt="imgalt">
-            <span>{{ title }}</span>
+            <span v-if="position==='bottom'">{{ title }}</span>
         </div>
-        <div class="banner__contacts-popup" :class="position" v-if="popup">
+        <div class="banner__contacts-popup" v-if="popup">
             <ul class="banner__contacts-list">
                 <li class="banner__contacts-item" v-for="item in list" :key="item.content">
                     <a :href="item.link" target="_blank">

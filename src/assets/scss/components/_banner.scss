@@ -28,34 +28,42 @@
         animation: bgChange 10s infinite ease;
     }
     &-box:nth-child(1) {
+        width: 40%;
         border-top-left-radius: 40px;
         height: calc(100% / 5);
     }
     &-box:nth-child(2) {
+        width: 40%;
         border-top-right-radius: 40px;
         height: calc(100% / 5);
     }
     &-box:nth-child(4) {
+        width: calc(100% / 3);
         border-bottom-left-radius: 40px;
         height: calc(100% / 5 * 3);
     }
     &-box:nth-child(5) {
+        width: calc(100% / 3);
         height: calc(100% / 5 * 3);
     }
     &-box:nth-child(6) {
+        width: calc(100% / 3);
         border-top-right-radius: 40px;
         height: calc(100% / 5 * 3);
     }
     &-box:nth-child(8) {
+        width: 40%;
         border-bottom-left-radius: 40px;
         height: calc(100% / 5);
     }
     &-box:nth-child(9) {
+        width: 40%;
         border-bottom-right-radius: 40px;
         height: calc(100% / 5);
     }
     &-box:nth-child(3),
     &-box:nth-child(7) {
+        width: 20%;
         position: relative;
         display: flex;
         flex-wrap: wrap;
@@ -76,7 +84,6 @@
 .banner__contacts {
     position: absolute;
     top: 50%;
-    left: 10%;
     transform: translateY(-50%);
     z-index: 2;
     @include mobileXS {
@@ -92,7 +99,6 @@
         img {
             width: 48px;
             height: 48px;
-            object-fit: contain;
         }
         @include tablet {
             font-size: 28px;
@@ -134,30 +140,6 @@
         transform: translateX(-50%);
         border: 20px solid transparent;
     }
-    &-popup.top {
-        top: 100%;
-        left: 0;
-        margin-top: 20px;
-        @include tablet {
-            left: unset;
-            right: 0;
-        }
-    }
-    &-popup.top::after {
-        top: -40px;
-        left: 50%;
-        border-bottom: 20px solid $purple;
-    }
-    &-popup.bottom {
-        bottom: 100%;
-        left: 0;
-        margin-bottom: 20px;
-    }
-    &-popup.bottom::after {
-        bottom: -40px;
-        left: 50%;
-        border-top: 20px solid $purple;
-    }
     &-item {
         font-size: 20px;
         white-space: nowrap;
@@ -180,10 +162,40 @@
         margin-bottom: 10px;
     }
 }
+.banner__contacts.top {
+    right: 10%;
+    .banner__contacts-popup {
+        top: 100%;
+        right: 0;
+        margin-top: 20px;
+        @include tablet {
+            left: unset;
+            right: 0;
+        }
+    }
+    .banner__contacts-popup::after {
+        top: -40px;
+        right: 0;
+        border-bottom: 20px solid $purple;
+    }
+}
+.banner__contacts.bottom {
+    left: 10%;
+    .banner__contacts-popup {
+        bottom: 100%;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .banner__contacts-popup::after {
+        bottom: -40px;
+        left: 20%;
+        border-top: 20px solid $purple;
+    }
+}
 .banner__content {
     position: absolute;
     bottom: 11%;
-    right: 5%;
+    right: 2%;
     width: 80%;
     border-radius: 20px;
     z-index: 1;
@@ -200,9 +212,11 @@
 }
 .banner__title {
     color: #fff;
-    font-size: 72px;
+    font-size: 85px;
     white-space: nowrap;
     text-shadow: -8px 0 $purple, 0 2px $purple, 2px 0 $purple, 0 -2px $purple;
+    font-family: "Bodoni Moda", serif;
+    font-style: italic;
     &-stroke {
         text-indent: 300px;
         @include desktop {

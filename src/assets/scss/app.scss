@@ -2,8 +2,16 @@
 @import "mixins";
 @import "common";
 
-//components
+// blocks
+@import "blocks/section";
+
+// components
 @import "components/header";
 @import "components/banner";
+@import "components/about";
 @import "components/advantages";
 @import "components/product-card";
+@import "components/testimonials";
+@import "components/blog";
+@import "components/subscribe";
+@import "components/footer";

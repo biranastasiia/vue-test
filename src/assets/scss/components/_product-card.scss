@@ -1,7 +1,7 @@
 .products {
-    padding-top: 100px;
+    padding-top: 150px;
     @include tablet {
-        padding-top: 80px;
+        padding-top: 60px;
     }
 }
 .products__list {

@@ -10,7 +10,7 @@
                     <div class="banner__background-box-small"></div>
                     <div class="banner__background-box-small"></div>
                     <BannerPopup 
-                        title="Book Now"
+                        title="Book"
                         imgsrc="./assets/images/icons/call.png"
                         imgalt="call"
                         position="top"
@@ -25,7 +25,7 @@
                     <div class="banner__background-box-small"></div>
                     <div class="banner__background-box-small"></div>
                     <BannerPopup 
-                        title="Chat Now"
+                        title="Chat"
                         imgsrc="./assets/images/icons/chat.png"
                         imgalt="chat"
                         position="bottom"
@@ -35,7 +35,9 @@
                 <div class="banner__background-box"></div>
             </div>
             <div class="banner__content">
-                <h1 class="banner__title">Find peace and relax<div class="banner__title-stroke">on miracle ISLAND</div></h1>
+                <h1 class="banner__title">
+                    Find peace and relax<div class="banner__title-stroke">on miracle ISLAND</div>
+                </h1>
             </div>
         </div>
    </section>

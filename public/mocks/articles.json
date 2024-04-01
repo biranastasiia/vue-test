@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Interesting places in Levanzo",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "img": "./assets/images/articles/article_1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Diving into culture",
+        "text": "Officiis modi cum adipisci totam repudiandae voluptatibus excepturi suscipit animi repellat accusamus qui eum velit voluptates.",
+        "img": "./assets/images/articles/article_2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Activities in sunny Sicily",
+        "text": "Numquam quos voluptatibus molestiae accusantium alias necessitatibus at tempora deserunt quam possimus corrupti laborum!",
+        "img": "./assets/images/articles/article_3.jpg"
+    }
+]
