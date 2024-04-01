@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Christina Teres",
+        "position": "Office manager",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi cum adipisci totam repudiandae voluptatibus excepturi suscipit animi repellat accusamus qui eum velit voluptates accusantium itaque, nesciunt sit aliquid similique. Temporibus laudantium enim sit vel provident, numquam quos voluptatibus molestiae accusantium alias necessitatibus at tempora deserunt quam possimus corrupti laborum!",
+        "photo": "./assets/images/users/user_1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Alyona Byork",
+        "position": "Musician",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi cum adipisci totam repudiandae voluptatibus excepturi suscipit animi repellat accusamus qui eum velit voluptates accusantium itaque, nesciunt sit aliquid similique. Temporibus laudantium enim sit vel provident, numquam quos voluptatibus molestiae accusantium alias necessitatibus at tempora deserunt quam possimus corrupti laborum!",
+        "photo": "./assets/images/users/user_2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Michael Doeh",
+        "position": "Entreprener",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi cum adipisci totam repudiandae voluptatibus excepturi suscipit animi repellat accusamus qui eum velit voluptates accusantium itaque, nesciunt sit aliquid similique. Temporibus laudantium enim sit vel provident, numquam quos voluptatibus molestiae accusantium alias necessitatibus at tempora deserunt quam possimus corrupti laborum!",
+        "photo": "./assets/images/users/user_3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Patrik Southstone",
+        "position": "Bartender",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis modi cum adipisci totam repudiandae voluptatibus excepturi suscipit animi repellat accusamus qui eum velit voluptates accusantium itaque, nesciunt sit aliquid similique. Temporibus laudantium enim sit vel provident, numquam quos voluptatibus molestiae accusantium alias necessitatibus at tempora deserunt quam possimus corrupti laborum!",
+        "photo": "./assets/images/users/user_4.jpg"
+    }
+]
