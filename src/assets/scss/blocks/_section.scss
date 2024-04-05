@@ -11,7 +11,7 @@
         font-size: 38px;
     }
     @include mobile {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 .section__subtitle {
@@ -20,6 +20,9 @@
     margin-bottom: 65px;
     @include mobile {
         font-size: 18px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
+    }
+    @include mobileXS {
+        margin-bottom: 20px;
     }
 }

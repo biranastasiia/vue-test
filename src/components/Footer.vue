@@ -30,7 +30,7 @@
         </div>
         <div class="footer__underline">
             <div class="container">
-                &copy;BestTours
+                &copy;BestTours 2024
             </div>
         </div>
     </footer>

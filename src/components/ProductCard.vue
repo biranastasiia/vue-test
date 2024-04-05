@@ -1,7 +1,7 @@
 <template>
     <div class="product-card">
         <div class="product-card__photo">
-            <img :src="data.photo" :alt="data.title">
+            <img :src="data.photo" :alt="data.title" loading="lazy">
         </div>
         <div class="product-card__top-line">
             <div class="product-card__nights">{{ data.nights }} nights</div>
@@ -46,6 +46,7 @@
         methods: {
             addToFavorite(){
                 this.isFavorite = !this.isFavorite;
+                console.log('add to fav');
             }
         }
     }

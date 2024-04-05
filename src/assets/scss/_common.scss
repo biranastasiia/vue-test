@@ -46,12 +46,9 @@ img {
         width: 1200px;
     }
     @include desktop {
-        width: 1000px;
+        width: 990px;
     }
-    @include desktop {
-        width: 700px;
-    }
-    @include desktop {
+    @include tablet {
         width: 100%;
     }
 }

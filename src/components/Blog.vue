@@ -5,7 +5,7 @@
             <div class="blog__body">
                 <div class="blog__latest">
                     <div class="blog__latest-photo">
-                        <img src="../assets/images/backgrounds/blog.jpg" alt="article 1">
+                        <img src="../assets/images/backgrounds/blog.jpg" alt="article 1" loading="lazy">
                     </div>
                     <div class="blog__latest-content">
                         <div class="blog__latest-title">Lorem ipsum dolor sit amet!</div>
@@ -15,7 +15,7 @@
                 <div class="blog__articles-list">
                     <div class="blog__article" v-for="article in articlesList" :key="article.id">
                         <div class="blog__article-photo">
-                            <img :src="article.img" :alt="article.title">
+                            <img :src="article.img" :alt="article.title" loading="lazy">
                         </div>
                         <div class="blog__article-content">
                             <a href="#" class="blog__article-title">{{ article.title }}</a>

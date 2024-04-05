@@ -9,7 +9,7 @@
                     <div class="swiper-slide testimonial" v-for="testimonial in testimonialsList" :key="testimonial.id">
                         <div class="testimonial__user">
                             <div class="testimonial__user-photo">
-                                <img :src="testimonial.photo" :alt="testimonial.name">
+                                <img :src="testimonial.photo" :alt="testimonial.name" loading="lazy">
                             </div>
                             <div class="testimonial__user-info">
                                 <div class="testimonial__user-name">{{ testimonial.name }}</div>

@@ -1,8 +1,15 @@
 .about {
     padding-top: 80px;
     padding-bottom: 50px;
+    @include mobile {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .section__title {
         margin-bottom: 40px;
+        @include tablet {
+            margin-bottom: 20px;
+        }
     }
     .about__photo {
         width: 25%;
@@ -12,5 +19,15 @@
         border-radius: 2px;
         box-shadow: 0 0 0 5px #fff, 0 0 0 20px $purple, -25px 25px 0 5px #fff, -25px 25px 0 20px $yellow;
         float: left;
+        @include tablet {
+            width: 40%;
+            box-shadow: 0 0 0 2px #fff, 0 0 0 15px $purple, -15px 15px 0 5px #fff, -15px 15px 0 15px  $yellow;
+            margin: 20px 35px 40px 30px;
+        }
+        @include tablet {
+            width: 45%;
+            box-shadow: 0 0 0 5px $purple, 0 0 0 10px  $yellow;
+            margin: 10px 25px 15px 10px;
+        }
     }
 }
