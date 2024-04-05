@@ -8,13 +8,13 @@
     {
         "id": 2,
         "title": "Diving into culture",
-        "text": "Officiis modi cum adipisci totam repudiandae voluptatibus excepturi suscipit animi repellat accusamus qui eum velit voluptates.",
+        "text": "Officiis modi cum adipisci totam repudiandae voluptatibus.",
         "img": "./assets/images/articles/article_2.jpg"
     },
     {
         "id": 3,
         "title": "Activities in sunny Sicily",
-        "text": "Numquam quos voluptatibus molestiae accusantium alias necessitatibus at tempora deserunt quam possimus corrupti laborum!",
+        "text": "Numquam quos voluptatibus molestiae accusantium alias necessitatibus.",
         "img": "./assets/images/articles/article_3.jpg"
     }
 ]
